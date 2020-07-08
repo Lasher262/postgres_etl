@@ -23,3 +23,23 @@ CREATE TABLE SRC (
     LOADED_AT TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(ID)
 );
+
+CREATE TABLE "SRC" (
+    id INTEGER,
+    title VARCHAR(255),
+    content VARCHAR(9000),
+    score INTEGER,
+    votes_up INTEGER,
+    votes_down INTEGER,
+    created_at TIMESTAMPTZ,
+    updated_at TIMESTAMPTZ,
+    sentiment FLOAT(4),
+    sku VARCHAR(255),
+    name VARCHAR(255),
+    email VARCHAR(255),
+    reviewer_type VARCHAR(255),
+    deleted boolean,
+    user_reference VARCHAR(255),
+    load_time TIMESTAMP with time zone DEFAULT current_timestamp,
+    primary key (id)
+);
